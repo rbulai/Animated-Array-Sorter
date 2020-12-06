@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animated Array Sorter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <main>
+        <section id="sorting-buttons">
+            <button>Selection Sort</button>
+            <button>Insertion Sort</button>
+            <button>Merge Sort</button>
+            <button id="last-button">Quicksort</button>
+        </section>
+
+        <hr>
+
+        <section id="controls">
+            <button id="generate-array">Generate New Array</button>
+
+            <div id="size-controller">
+                <input type="range" id="array-size" min=30 max=200 step=1 value=80>
+                <label for="array-size">Array Size</label>
+            </div>
+
+            <div id="speed-controller">
+                <input type="range" id="sorting-speed" min=1 max=5 step=1 value=4>
+                <label for="sorting-speed">Sorting Speed</label>
+            </div>
+
+            <button id="stop">Stop</button>
+        </section>
+
+        <section id="array-field">
+            <div id="array-box"></div>
+        </section>
+    </main>
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
