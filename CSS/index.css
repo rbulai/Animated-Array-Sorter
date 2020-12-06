@@ -1,0 +1,177 @@
+body
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+main
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+/* Buttons & controls */
+
+#sorting-buttons
+{
+    display: flex;
+    justify-content: center;
+}
+
+#sorting-buttons > button
+{
+    transition: color 0.25s, background-color 0.25s;
+
+    margin-top: 15px;
+    padding: 5px 50px;
+    border: none;
+    border-right: 1px solid black;
+    background: none;
+    outline: none;
+    cursor: pointer;
+
+    /* Removes unwanted border radius on buttons */
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#sorting-buttons > button:hover
+{
+    color: white;
+
+    background-color: #800020;
+}
+
+#sorting-buttons > #last-button
+{
+    border: none;
+}
+
+hr
+{
+    width: 95%;
+    margin: 25px auto;
+
+    background-color: black;
+}
+
+#controls
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#controls > button
+{
+    transition: background-color 0.25s;
+
+    padding: 10px 25px;
+    border: 2px solid black;
+    background: none;
+    outline: none;
+    cursor: pointer;
+
+    /* Removes unwanted border radius on buttons */
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+
+    background-color: #800020;
+}
+
+#controls > button:hover
+{
+    background-color:#a00000;
+}
+
+#size-controller
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#size-controller > label
+{
+    margin: 0 15px;
+
+    font-size: 0.8em;
+}
+
+#speed-controller
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#speed-controller > label
+{
+    margin: 0 15px;
+
+    font-size: 0.8em;
+}
+
+
+
+/* Array & array elements */
+
+#array-field
+{
+    margin: 25px 0;
+
+    border: 3px solid black;
+}
+
+#array-box
+{
+    display: flex;
+    justify-content: center;
+
+    height: 60vh;
+    padding: 50px;
+
+    background-color: lightgrey;
+}
+
+
+
+/* Media queries */
+
+@media (min-width: 1440px)
+{
+    #sorting-buttons > button
+    {
+        font-size: 1.25em;
+    }
+
+    #controls > button
+    {
+        font-size: 1em;
+    }
+
+    #size-controller > label
+    {
+        font-size: 1em;
+    }
+
+    #speed-controller > label
+    {
+        font-size: 1em;
+    }
+}
